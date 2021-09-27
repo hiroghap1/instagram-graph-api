@@ -5,7 +5,8 @@ fetch('get-feed.php')
     .then(response => { return response.json() })
     .then(data => {
         let html = '';
-        const json = data.data;
+        const json = data.media.data;
+        console.log(json);
 
         for (let i = 0; i < photos; i++) {
             const item = json[i];
