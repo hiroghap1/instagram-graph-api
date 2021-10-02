@@ -1,3 +1,5 @@
 .idea
 api-setting.php
 .github
+*.css
+*.css.map
