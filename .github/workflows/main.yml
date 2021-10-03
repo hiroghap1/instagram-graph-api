@@ -44,7 +44,7 @@
 
         # sass のインストール
         - run: npm install sass
-        - run: npm run sass
+        - run: npm run sass:now
 
         - name: Install SSH key
           uses: shimataro/ssh-key-action@v2
