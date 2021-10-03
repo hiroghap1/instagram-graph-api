@@ -3,3 +3,5 @@ api-setting.php
 .github
 *.css
 *.css.map
+
+node_modules
