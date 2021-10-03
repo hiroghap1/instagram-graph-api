@@ -4,6 +4,7 @@
   "description": "InstagramのGraphAPIを用いて投稿一覧をサイト内に表示します。PHPが動作するサーバーが必要です。",
   "main": "index.html",
   "scripts": {
+    "sass:now": "sass css/:css/ --style=compressed",
     "sass": "sass css/:css/ --style=compressed --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
