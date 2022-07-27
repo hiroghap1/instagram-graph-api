@@ -10,7 +10,12 @@ fetch('get-feed.php')
 
         for (let i = 0; i < photos; i++) {
             const item = json[i];
-            const caption = wordCount == 0 ? item.caption : item.caption.substr(0, wordCount) + '…';
+            let caption = '';
+            if(item.hasOwnProperty('caption')) {
+                caption = wordCount == 0 ? item.caption : item.caption.substr(0, wordCount) + '…';
+            } else {
+                caption = '';
+            }
             html += '<div class="col-4">' +
                 '<a href="' + item.permalink + '" target="_blank" rel="noopener"><figure>' +
                 '<img src="' + item.media_url + '" alt="">' +
