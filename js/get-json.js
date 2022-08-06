@@ -7,8 +7,9 @@ fetch('get-feed.php')
         let html = '';
         const json = data.media.data;
         console.log(json);
+        const length = json.length < photos ? json.length : photos;
 
-        for (let i = 0; i < photos; i++) {
+        for (let i = 0; i < length; i++) {
             const item = json[i];
             let caption = '';
             if(item.hasOwnProperty('caption')) {
