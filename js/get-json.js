@@ -17,10 +17,10 @@ fetch('get-feed.php')
             } else {
                 caption = '';
             }
-            html += '<div class="col-4">' +
-                '<a href="' + item.permalink + '" target="_blank" rel="noopener"><figure>' +
-                '<img src="' + item.media_url + '" alt="">' +
-                '<figcaption>' + caption + '</figcaption></figure></a></div>';
+            html += `<div class="col-4">
+                <a href="${item.permalink}" target="_blank" rel="noopener"><figure>
+                <img src="${item.media_url}" alt="">
+                <figcaption>${caption}</figcaption></figure></a></div>`;
         }
 
         document.getElementById('instagram-feed').innerHTML = html;

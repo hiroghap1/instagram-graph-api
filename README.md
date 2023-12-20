@@ -20,9 +20,8 @@ InstagramビジネスアカウントID を取得する 。
 
 ## このリポジトリの構成
 
-get-json.jsからget-feed.phpへ非同期通信し、get-feed.phpがGraphAPIからJSONデータを取得、get-json.jsがJSONデータを受け取って表示しています。
-
-fetchを使用しているのでIE11には対応していません（ポリフィルで対応可能）。
+get-json.jsからget-feed.phpへ非同期通信し、get-feed.phpがGraphAPIからJSONデータを取得、get-json.jsがJSONデータを受け取って表示しています。  
+※SSL通信が必要なので、ローカル環境の設定に注意してください。
 
 CSSはBootStrap 5、追加のCSSはDart Sassを使用しています。
 
